@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6bceed"
+    tools:context=".ElementActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="80dp"
+        android:contentDescription="sim" 
+        android:src="@drawable/ic_launcher"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/sabermais_Button"
+   
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:text="sabermais" />
+
+    <Button
+        android:id="@+id/tryagain_Button"
+       
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="tentarnovamente" />
+
+</FrameLayout>
