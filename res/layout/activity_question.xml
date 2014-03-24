@@ -1,49 +1,50 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6bceed"
+    android:background="@drawable/backapp"
     tools:context=".QuestionActivity" >
+    
+<TextView
+    android:id="@+id/text"
+    android:layout_width="158dp"
+    android:layout_height="121dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="15dp"
+    android:background="@drawable/bulle"
+    android:text="\n\n\n        teste"
+    android:textColor="#008ec4" 
+    >
 
-    <TextView
-        android:id="@+id/fullscreen_content"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="top|center"
-        android:keepScreenOn="true"
-        android:paddingTop="50dp"
-        android:text="pergunta"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+</TextView>
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="120dp"
-        android:paddingTop="120dp"
-        android:src= "@drawable/ic_launcher"/>
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/text"
+    android:layout_marginLeft="100dp"
+    android:layout_alignTop="@+id/text"
+    android:src="@drawable/akinator_serein"
+    android:contentDescription="desc" />
 
-    <!--
-         This FrameLayout insets its children based on system windows using
-         android:fitsSystemWindows.
-    -->
+<Button
+    android:id="@+id/button1"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:text="Button" />
 
-    <Button
-        android:id="@+id/sim_Button"
-       
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|left"
-        android:text="sim" />
+<Button
+    android:id="@+id/button2"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/button1"
+    android:layout_alignBottom="@+id/button1"
+    android:layout_alignParentRight="true"
+    android:text="Button" />
 
-    <Button
-        android:id="@+id/nao_Button"
-        
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|right"
-        android:text="nao" />
-
-</FrameLayout>
+</RelativeLayout>

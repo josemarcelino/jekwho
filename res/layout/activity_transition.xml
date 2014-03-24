@@ -2,13 +2,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6bceed"
-    tools:context=".TransitionActivity" >
+    android:background="@drawable/backapp"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tapis" 
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="25dp" 
+        android:contentDescription="desc"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="168dp"
+        android:layout_height="118dp"
+        android:src="@drawable/dialogo"
+        android:layout_gravity="left"
+        android:layout_marginTop="50dp"
+        android:contentDescription="desc"  />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/akinator_inspiration_forte"
+        android:layout_gravity="right"
+        android:layout_marginTop="50dp"
+        android:contentDescription="desc" />
 
     <Button
-        android:id="@+id/next_button"
-        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/continuar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:background ="@android:color/transparent"
+        android:text="continue_str" 
+        android:textColor="#FFFFFF"/>
+
+    
 
 </FrameLayout>

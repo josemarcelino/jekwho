@@ -52,7 +52,7 @@ public class QuestionActivity extends Activity {
 		this.setContentView(R.layout.activity_question);
 
 		//final View controlsView = findViewById(R.id.fullscreen_content_controls);
-		final TextView contentView = (TextView) findViewById(R.id.fullscreen_content);
+		final TextView contentView = (TextView) findViewById(R.id.text);
 
 		contentView.setText(Tab_Perguntas.get(i).getPergunta());
 
@@ -61,8 +61,8 @@ public class QuestionActivity extends Activity {
 
 		// Set up an instance of SystemUiHider to control the system UI for
 
-		Button yes = (Button) findViewById(R.id.sim_Button);	
-		Button no = (Button) findViewById(R.id.nao_Button);	
+		Button yes = (Button) findViewById(R.id.button1);	
+		Button no = (Button) findViewById(R.id.button2);	
 
 
 		 yes.setOnClickListener(new View.OnClickListener() {

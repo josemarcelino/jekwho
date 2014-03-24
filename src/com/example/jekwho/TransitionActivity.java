@@ -25,7 +25,7 @@ public class TransitionActivity extends Activity {
 		this.setContentView(R.layout.activity_transition);
 
 
-        final Button start_question_button = (Button) findViewById(R.id.next_button);
+        final Button start_question_button = (Button) findViewById(R.id.continuar);
         start_question_button.setOnClickListener(new View.OnClickListener() {
            
         	public void onClick(View v) {

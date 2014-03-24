@@ -14,16 +14,17 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 	  super.onCreate(savedInstanceState);
-
+	
     //Remove title bar
     this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
     //Remove notification bar
     this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-   //set content view AFTER ABOVE sequence (to avoid crash)
+    
     this.setContentView(R.layout.activity_main); 
 
+   //set content view AFTER ABOVE sequence (to avoid crash)
+   
  
 
     final Button start_game = (Button) findViewById(R.id.start_button_1);
