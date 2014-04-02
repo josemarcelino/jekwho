@@ -2,18 +2,14 @@ package com.example.jekwho;
 
 import java.util.ArrayList;
 
-import android.annotation.TargetApi;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.text.format.Time;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnTouchListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.View.OnClickListener;
@@ -94,14 +90,14 @@ public class ElementActivity extends Activity {
 		}
 		else{
 
-			String link = Tab_Membros.get(membro).getLink();
+			final String link = Tab_Membros.get(membro).getLink();
 			contentView.setText(Tab_Membros.get(membro).getNome());
 			imagem_membro.setImageResource((Integer) Tab_Membros.get(membro).getObject());
 			button_saber_mais.setOnClickListener(new View.OnClickListener() {
 
 	        	public void onClick(View v) {
 
-	        		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(Tab_Membros.get(membro).getLink()));
+	        		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(link));
 	        		startActivity(browserIntent);		
 	            	// Perform action on click
 	            }
@@ -127,10 +123,7 @@ public class ElementActivity extends Activity {
 		// troca o abc_ic_menu pelo resorce drawable do user em questão
 		// this activity.
 
-	private OnTouchListener Listener(OnTouchListener onTouchListener) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
 	@Override
 	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
