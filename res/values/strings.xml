@@ -8,5 +8,4 @@
     <string name="title_activity_transition">TransitionActivity</string>
     <string name="title_activity_question">QuestionActivity</string>
     <string name="title_activity_element">ElementActivity</string>
-
 </resources>
